@@ -14,14 +14,19 @@ const UserPage = () => {
   const [userDetails, setUserDetails] = useState({canModerate: false});
 
   async function fetchUserPage(){
-    const response = await fetch(`${getApiUrl()}/api/users/getuserpage?id=${UserId}`, {
+    try{
+      const response = await fetch(`${getApiUrl()}/api/users/getuserpage?id=${UserId}`, {
         method: 'GET',
         credentials: 'include'
       });
-    if (response.ok){
-        const userPageDto = await response.json();
-        setReviews(userPageDto.reviews);
-        setUserHeader(userPageDto.userHeader)
+      if (response.ok){
+          const userPageDto = await response.json();
+          setReviews(userPageDto.reviews);
+          setUserHeader(userPageDto.userHeader)
+      }
+    }
+    catch (error){
+      console.log(error);
     }
 } 
 

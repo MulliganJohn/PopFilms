@@ -43,34 +43,43 @@ const ReviewContainer = ({userDetails}) => {
   }, [isReviewFormVisble]);
 
   async function fetchReviews(){
-    const response = await fetch(`${getApiUrl()}/api/reviews/getMovieReviews/${MovieId}`, {
+    try{
+      const response = await fetch(`${getApiUrl()}/api/reviews/getMovieReviews/${MovieId}`, {
         method: 'GET',
         credentials: 'include'
       });
-    if (response.ok){
-        setReviews(await response.json());
+      if (response.ok){
+          setReviews(await response.json());
+      }
+    } catch (error){
+      console.log(error);
     }
   }
   
   async function checkForPreviousReview(){
-    const response = await fetch(`${getApiUrl()}/api/reviews/checkUserReview/${MovieId}`, {
+    try{
+      const response = await fetch(`${getApiUrl()}/api/reviews/checkUserReview/${MovieId}`, {
         method: 'GET',
         credentials: 'include'
       });
-    if (response.ok){
-        const ReviewCheckDto = await response.json();
-        setReviewCheckDto(ReviewCheckDto);
-        if (ReviewCheckDto.userRecognized === true){
-            if (ReviewCheckDto.doesReviewExist === true){
-              setReviewStatus("edit");
-            }
-            else{
-              setReviewStatus("default");
-            }
-        }
-        else{
-            setReviewStatus("login");
-        }
+      if (response.ok){
+          const ReviewCheckDto = await response.json();
+          setReviewCheckDto(ReviewCheckDto);
+          if (ReviewCheckDto.userRecognized === true){
+              if (ReviewCheckDto.doesReviewExist === true){
+                setReviewStatus("edit");
+              }
+              else{
+                setReviewStatus("default");
+              }
+          }
+          else{
+              setReviewStatus("login");
+          }
+      }
+    }
+    catch (error){
+      console.log(error);
     }
   }
 

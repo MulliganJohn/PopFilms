@@ -19,21 +19,25 @@ const NavbarUser = ({setUserDetails}) => {
     };
 
     async function signIn(){
-        const response = await fetch(`${getApiUrl()}/api/users/signin`, {
-            method: 'POST',
-            credentials: 'include'
-          });
-        const responseJson = await response.json();
-        setUserDetails(responseJson);
-        if (responseJson.userRecognized){
-            setUsername(responseJson.username);
-            setEmail(responseJson.email);
-            setUserId(responseJson.userId);
-            setLoggedIn(true);
-            setLoading(false);
-        }
-        else{
-            setLoading(false);
+        try{
+            const response = await fetch(`${getApiUrl()}/api/users/signin`, {
+                method: 'POST',
+                credentials: 'include'
+              });
+            const responseJson = await response.json();
+            setUserDetails(responseJson);
+            if (responseJson.userRecognized){
+                setUsername(responseJson.username);
+                setEmail(responseJson.email);
+                setUserId(responseJson.userId);
+                setLoggedIn(true);
+                setLoading(false);
+            }
+            else{
+                setLoading(false);
+            }
+        } catch (error){
+            console.log(error);
         }
     } 
 
@@ -46,12 +50,16 @@ const NavbarUser = ({setUserDetails}) => {
     }
 
     const handleLogout = async () => {
-        const response = await fetch(`${getApiUrl()}/api/users/signout`, {
-            method: 'POST',
-            credentials: 'include'
-          });
-        if (response.ok){
-            setLoggedIn(false);
+        try{
+            const response = await fetch(`${getApiUrl()}/api/users/signout`, {
+                method: 'POST',
+                credentials: 'include'
+              });
+            if (response.ok){
+                setLoggedIn(false);
+            }
+        } catch (error){
+            console.log(error);
         }
     }
 
