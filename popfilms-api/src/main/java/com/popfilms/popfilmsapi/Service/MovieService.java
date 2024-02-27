@@ -105,7 +105,7 @@ public class MovieService {
             Resource poster_imageResource = poster_image.getResource();
             Resource bg_imageResource = bg_image.getResource();
             String imageName = ImageServerUploader.getImageName(poster_imageResource.getFilename(), newMovie.getId());
-            String imageUrl = UriComponentsBuilder.fromHttpUrl("http://localhost:443/addMovieImages").queryParam("image_name", imageName).toUriString();
+            String imageUrl = UriComponentsBuilder.fromHttpUrl("http://localhost:8081/addMovieImages").queryParam("image_name", imageName).toUriString();
             ImageServerUploader.sendPostRequest(imageUrl, poster_imageResource, bg_imageResource);
 
             return newMovie;
