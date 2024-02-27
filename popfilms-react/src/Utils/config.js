@@ -12,8 +12,8 @@ const URLConfig = {
       imageUrl: 'http://localhost:8081'
     },
     production: {
-      apiUrl: `https://api.popfilms.xyz`,
-      imageUrl: `https://images.popfilms.xyz`,
+      apiUrl: `YOUR_URL/IP_HERE`,
+      imageUrl: `YOUR_URL/IP_HERE`,
     },
 };
 
