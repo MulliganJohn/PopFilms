@@ -1,0 +1,13 @@
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+
+}
+
+body{
+  background-color: rgb(29, 30, 31);
+  color: white;
+}
+

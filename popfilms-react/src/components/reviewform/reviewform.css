@@ -1,0 +1,103 @@
+.popfilms__reviewform{
+    display: flex;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+.popfilms__reviewform-form{
+    display: flex;
+    position: relative;
+    width: 40rem;
+    background-color: #1D1E1F;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+#reviewFormTitle{
+   height: 2rem;
+   padding-left: 7px;
+   padding-right: 7px;
+   border-radius: 2px;
+   background-color: #1D1E1F;
+   outline: none;
+   border: 1px solid #ffffff;
+   color: white;
+   box-shadow: 0px 0px 50px 10px rgba(61, 61, 61, 0.10);
+   font-family: var(--font-family);
+   font-size: 14px;
+   font-weight: 400;
+   margin-bottom: .5rem;
+   margin-top: .5rem;
+}
+
+#reviewFormBody{
+    height: 20rem;
+    resize: none;
+    padding: 7px;
+    border-radius: 2px;
+    background-color: #1D1E1F;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: white;
+    box-shadow: 0px 0px 50px 10px rgba(61, 61, 61, 0.10);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+ }
+ #reviewFormButton{
+    height: 2rem;
+    background-color: #15A9FC;
+    border-radius: 5px;
+    width: 15rem;
+    outline: none;
+    border: none;
+    align-self: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+ }
+
+ #reviewFormBody::placeholder{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+#reviewFormTitle::placeholder{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+ }
+
+#reviewFormButton:disabled {
+   cursor: not-allowed;
+   background-color: rgb(48, 48, 48);
+}
+
+#reviewFormButton:hover:not(:disabled) {
+   background-color: #44bbff;
+   cursor: pointer;
+}
+
+.popfilms__reviewform-form > :first-child{
+   margin-bottom: .5rem;
+}
+
+.signupform-error-text{
+    text-align: center;
+    color: rgb(252, 68, 68);
+    font-size: 12px;
+}

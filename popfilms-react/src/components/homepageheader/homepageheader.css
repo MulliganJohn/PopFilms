@@ -1,0 +1,47 @@
+.popfilms__homepage-header{
+    width: 100%;
+    position: relative;
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, #111111 35%, rgba(0,0,0,0) 60%);
+}
+
+.popfilms__homepage-header::before {
+    content: "";
+    display: block;
+    padding-bottom: 37.5%; /* 9 divided by 16, multiplied by 100 */
+  }
+
+
+.popfilms__homepage-header-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    max-width: 700px;
+    margin-left: 5rem;
+}
+
+.popfilms__homepage-header-text h1{
+    color: white;
+    font-size: 48px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.popfilms__homepage-header-text p {
+    color: #c4c4c4;
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.Bg-image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 66.66%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}

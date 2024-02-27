@@ -1,0 +1,53 @@
+.popfilms__reviewcontainer{
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    height: fit-content;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 1rem;
+}
+
+.reviews-present{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+
+.review_header-title {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.review_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#reviewButton{
+    display: flex;
+    justify-content: center; /* Center the text vertically within the button */
+    align-items: center;
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 6px;
+    border-color: transparent;
+    background: rgba(0, 0, 0, 0.3);
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#reviewButton:hover{
+    background-color: #83838352;
+}

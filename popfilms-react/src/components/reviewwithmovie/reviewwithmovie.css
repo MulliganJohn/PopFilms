@@ -1,0 +1,83 @@
+.popfilms__reviewwithmovie {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: fit-content;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.popfilms__reviewwithmovie p {
+    font-family: var(--font-family);
+}
+
+.popfilms__reviewwithmovie h2 {
+    color: white;
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.popfilms__reviewwithmovie-right {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    flex-wrap: wrap;
+}
+
+.popfilms__reviewwithmovie-left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.popfilms__reviewwithmovie-left img{
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+}
+
+.popfilms__reviewwithmovie-left img:hover{
+    cursor: pointer;
+}
+
+.reviewbody {
+    font-size: 15px;
+    line-height: 2;
+    font-family: var(--font-family);
+}
+
+.titleandepoch h1{
+    color: white;
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+.titleandepoch p{
+    color: white;
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+
+.popfilms__reviewwithmovie button{
+    position: absolute;
+    top: .5rem;
+    right: .75rem;
+    width: 110px;
+    height: 25px;
+    background-color: #ff4f4f;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.popfilms__reviewwithmovie button:hover{
+    cursor: pointer;
+    background-color: #ff7575;
+}

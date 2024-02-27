@@ -1,0 +1,32 @@
+.popfilms_userpagetabs_tab{
+    display: flex;
+    width: 90px;
+    height: 35px;
+    background-color: #141516;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -43px;
+    left: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.popfilms_userpagetabs_tab:hover{
+    cursor: pointer;
+    background-color: #57575752;
+}
+
+.horizontal-line {
+    height: 8px;
+    background-color: #141516;
+    border: none;
+    outline: none;
+}
+
+.popfilms_userpagetabs{
+    margin-bottom: -35px;
+    margin-top: 35px;
+}

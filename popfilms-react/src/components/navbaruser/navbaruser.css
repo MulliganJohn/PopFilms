@@ -1,0 +1,136 @@
+.popfilms__navbaruser_loggedout{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signinbtn {
+    width: 67.2px;
+    height: 25.2px;
+    color: #2e2e2e;
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 6px;
+    border-color: transparent;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+#signupbtn {
+    display: flex;
+    justify-content: center; /* Center the text vertically within the button */
+    align-items: center;
+    width: 79.52px;
+    height: 27px;
+    color: #2e2e2e;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 6px;
+    border-color: transparent;
+    background-color: #15A9FC;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+#signupbtn:hover {
+    background-color: #44bbff;
+    border: none;
+}
+#signinbtn:hover {
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.popfilms__navbaruser_loggedin{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    right: 0px;
+    top: 0px;
+    transition: background-color 0.2s ease;
+}
+
+.popfilms__navbaruser_loggedin p{
+    font-size: 15px;
+}
+
+#userPNG{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#arrowDropDown{
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.popfilms__navbaruser_loggedin:hover{
+    cursor: pointer;
+    background-color: #83838352;
+}
+
+.popfilms__navbaruser_dropdown {
+    position: fixed;
+    top: 2.9rem;
+    right: 3.5rem;
+    background: rgba(22, 22, 22, 0.822);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#navbaruser_dropdown_list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+#navbaruser_dropdown_list li:not(:nth-child(3)){
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+
+#navbaruser_dropdown_list li:not(:first-child){
+    transition: background-color 0.2s ease;
+}
+
+
+#navbaruser_dropdown_list li:hover:not(:first-child){
+    background-color: #83838352;
+    cursor: pointer;
+}
+
+#navbaruser_dropdown_list :first-child{
+    font-weight: 700;
+}
+
+#navbaruser_dropdown_list :nth-child(4){
+    margin-bottom: .25rem;
+}
+
+#navbaruser_dropdown_list :nth-child(3){
+    border-top: 1px solid #636363;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+
+.popfilms__navbaruser{
+    margin-right: 2rem;
+    width: 104.13px;
+    height: 30px;
+}

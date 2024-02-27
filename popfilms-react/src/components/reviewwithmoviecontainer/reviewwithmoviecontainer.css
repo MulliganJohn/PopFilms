@@ -1,0 +1,17 @@
+.popfilms__reviewwithmoviecontainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+    height: fit-content;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 1rem;
+}
+
+.movie-reviews-present{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}

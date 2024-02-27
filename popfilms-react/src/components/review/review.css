@@ -1,0 +1,97 @@
+.popfilms__review {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: fit-content;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.popfilms__review p {
+    font-family: var(--font-family);
+}
+.popfilms__review h1 {
+    color: white;
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+}
+
+
+.reviewname, .rating p {
+    color:#c4c4c4;
+    font-weight: 600;
+    font-size: 13.5px;
+}
+
+.rating img {
+    width: auto;
+    height: 10px;
+}
+
+.popfilms__review-right {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    flex-wrap: wrap;
+}
+
+.popfilms__review-left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+.popfilms__review-left-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.popfilms__review-left img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+.popfilms__review-left img:hover{
+    cursor: pointer;
+}
+
+.popfilms__review-left-info p {
+    font-size: 13.5px;
+    color: #c4c4c4;
+}
+
+.reviewbody {
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+.popfilms__review button{
+    position: absolute;
+    top: .5rem;
+    right: .75rem;
+    width: 110px;
+    height: 25px;
+    background-color: #ff4f4f;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.popfilms__review button:hover{
+    cursor: pointer;
+    background-color: #ff7575;
+}

@@ -1,0 +1,69 @@
+.popfilms__navbar {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 6; 
+    max-width: 1920px;
+}
+
+.popfilms__navbar-left{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.popfilms__navbar-left img {
+    width: 100px;
+    height: 25px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.popfilms__navbar-left input::placeholder {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    color: #acacac;
+}
+
+.popfilms__navbar-left input {
+    flex-grow: 1;
+    height: 30px;
+    max-width: 450px;
+    border-radius: 50px;
+    outline: none;
+    margin-left: 2rem;
+    padding-left: 2.5rem;
+    background-image: url("../../Assets/searchglass.png");
+    background-color: #242424;
+    background-repeat: no-repeat;
+    background-position: 6px 4px;
+    border: none;
+    text-align: left;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(223, 223, 223);
+    transition: background-color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+.popfilms__navbar-left input:focus {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 375px) {
+    /* styles for smaller screens */
+    .popfilms__navbar-left input
+    {
+        display: none;
+    }
+    /* etc. */
+  }

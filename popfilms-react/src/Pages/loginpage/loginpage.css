@@ -1,0 +1,26 @@
+.loginpage {
+    width: 100%;
+    height: 100vh;
+}
+
+.loginpage-logo{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.loginpage-header {
+    position: fixed;
+    padding-top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.loginpage-main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}

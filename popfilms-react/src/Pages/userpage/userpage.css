@@ -1,0 +1,17 @@
+.userpage-content {
+    padding-top: 46px;
+}
+
+.userpage-body {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.userpage-body > :first-child{
+    margin-bottom: 2rem;
+}
+
+.userpage-body > :nth-child(2){
+    margin-bottom: -1rem;
+}

@@ -1,0 +1,104 @@
+.popfilms__movielist-movies {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    gap: 1.5rem;
+    will-change: transform;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.popfilms__movielist-moviecontainer {
+    position: relative;
+    transition: all 0.3s;
+}
+
+.popfilms__movielist
+{
+    position: relative;
+}
+
+.MovieContainerMovies {
+    width: 225px;
+    height: 315px;
+    border-radius: 5px;
+    user-select: none;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.MovieContainerMovies:hover {
+    transform: scale(1.03);
+}
+
+.popfilms__movielist p{
+    font-size: 26px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: white;
+}
+
+
+.scroll-button-left{
+    position: absolute;
+    height: 60.8px;
+    width: 42.4px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: -1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-button-right{
+    position: absolute;
+    height: 60.8px;
+    width: 42.4px;
+    border: none;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: -1.4rem;
+}
+
+.popfilms__movielist input[type=button]:hover{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+:focus{
+    outline: none;
+}
+
+@media (max-width: 375px) {
+    /* styles for smaller screens */
+    .popfilms__movielist
+    {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .popfilms__movielist-movies input[type=image]{
+        width: 157.5px;
+        height: 220.5px; 
+    }
+
+    .popfilms__movielist p{
+        font-size: 18px;
+    }
+  }

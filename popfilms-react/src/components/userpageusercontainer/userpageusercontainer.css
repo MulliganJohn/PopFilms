@@ -1,0 +1,32 @@
+.usercontainer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: auto;
+    white-space: nowrap;
+    height: min-content;
+    border-radius: 5px;
+    padding: 1.5rem;
+    align-items: center;
+    gap: 30px;
+}
+
+.usercontainer img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+.user-page-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-page-info h1{
+    font-size: 28px;
+    padding-bottom: .5rem;
+}
+
+.user-page-info p{
+    font-size: 16px;
+}
